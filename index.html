@@ -3,14 +3,14 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>APEC Student Login Portal</title>
+<title>College Student Login</title>
 
 <style>
 *{
     margin:0;
     padding:0;
     box-sizing:border-box;
-    font-family:Arial, Helvetica, sans-serif;
+    font-family:Arial,Helvetica,sans-serif;
 }
 
 body{
@@ -18,16 +18,16 @@ body{
     display:flex;
     justify-content:center;
     align-items:center;
-    min-height:100vh;
+    height:100vh;
 }
 
 .container{
-    width:360px;
     background:#fff;
+    width:350px;
     padding:30px;
-    border-radius:18px;
-    box-shadow:0 8px 20px rgba(0,0,0,.25);
+    border-radius:15px;
     text-align:center;
+    box-shadow:0 10px 25px rgba(0,0,0,.3);
 }
 
 .logo{
@@ -42,60 +42,43 @@ body{
 
 h2{
     color:#003366;
-    margin-bottom:25px;
-    font-size:22px;
+    margin-bottom:20px;
 }
 
 input{
     width:100%;
-    padding:13px;
+    padding:12px;
     margin:10px 0;
     border:1px solid #ccc;
     border-radius:8px;
     font-size:16px;
-    outline:none;
-}
-
-input:focus{
-    border-color:#007BFF;
 }
 
 button{
     width:100%;
-    padding:13px;
-    margin-top:10px;
+    padding:12px;
     background:#007BFF;
-    color:#fff;
+    color:white;
     border:none;
     border-radius:8px;
-    font-size:17px;
+    font-size:16px;
     cursor:pointer;
+    transition:.3s;
 }
 
 button:hover{
     background:#0056b3;
 }
 
-.forgot{
-    display:block;
-    margin-top:15px;
-    text-decoration:none;
-    color:#007BFF;
-    font-size:15px;
-}
-
-.forgot:hover{
-    text-decoration:underline;
-}
-
 .footer{
-    margin-top:25px;
-    font-size:14px;
-    color:#555;
+    margin-top:15px;
+    color:#666;
+    font-size:13px;
 }
 </style>
 
 </head>
+
 <body>
 
 <div class="container">
@@ -117,22 +100,21 @@ button:hover{
     </div>
 
 
-  <img src="1697346843915.jpeg" alt="College Logo" class="logo">
-    <h2>Student Login</h2>
+<img src="1697346843915.jpeg" class="logo" alt="College Logo">
 
-    <form>
-        <input type="text" placeholder="Student ID" required>
+<h2>Student Login</h2>
 
-        <input type="password" placeholder="Password" required>
+<form>
+<input type="text" placeholder="Student ID" required>
 
-        <button type="submit">Login</button>
+<input type="password" placeholder="Password" required>
 
-        <a href="#" class="forgot">Forgot Password?</a>
-    </form>
-    
-    <div class="footer">
-        APEC Student Login Portal
-    </div>
+<button type="submit">Login</button>
+</form>
+
+<div class="footer">
+APEC Student Login Portal
+</div>
 
 </div>
 
